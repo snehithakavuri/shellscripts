@@ -1,0 +1,5 @@
+#!/bin/bash
+# script to write a file and upload it to s3 bucket
+file2=$1
+echo "hello world" >> file2
+s3cmd put $file2 s3://myjenkinsbuilds
